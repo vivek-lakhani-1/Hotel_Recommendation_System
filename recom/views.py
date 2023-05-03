@@ -5,7 +5,7 @@ from math import radians, sin, cos, sqrt, atan2
 import geocoder
 from geopy.geocoders import Nominatim
 
-df = pd.read_csv('data/data.csv',error_bad_lines=False)
+df = pd.read_csv('Data/data.csv')
 columns_to_drop = ['cleartrip_seller_rating', 'country', 'crawl_date', 'image_count', 'landmark', 'locality', 'property_id', 'property_type', 'province', 'qts', 'room_area', 'room_count', 'room_type', 'sitename', 'state', 'tad_review_count', 'tad_review_rating', 'tad_stay_review_rating', 'tripadvisor_seller_rating', 'uniq_id']
 df.drop(columns=columns_to_drop, inplace=True)
 df = df.dropna(subset=['latitude', 'longitude'])

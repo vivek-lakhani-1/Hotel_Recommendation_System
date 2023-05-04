@@ -62,3 +62,53 @@ function pagination(){
 	$('#pagination-wrap ul li').removeClass('active');
 	$('#pagination-wrap ul li:eq('+pos+')').addClass('active');
 }
+
+const chat = document.getElementById("chatbot-chat");
+
+
+$("#chatbot-open-container").click(function(){
+  $("#open-chat-button").toggle(200);
+  $("#close-chat-button").toggle(200);
+  $("#chatbot-container").fadeToggle(200);
+});
+
+document.getElementById("chatbot-new-message-send-button").addEventListener("click", newInput);
+
+document.getElementById("chatbot-input").addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      newInput();
+    }
+});
+
+function newInput(){
+  newText = document.getElementById("chatbot-input").value;
+  if (newText != ""){
+    document.getElementById("chatbot-input").value = "";
+    addMessage("sent", newText);
+    generateResponse(newText);
+  }
+}
+
+
+function addMessage(type, text){
+  let messageDiv = document.createElement("div");
+  let responseText = document.createElement("p");
+  responseText.appendChild(document.createTextNode(text));
+  
+  if (type == "sent"){
+    messageDiv.classList.add("chatbot-messages", "chatbot-sent-messages");
+  } else if (type == "received"){
+    messageDiv.classList.add("chatbot-messages", "chatbot-received-messages");
+  }
+
+  messageDiv.appendChild(responseText);
+  chat.prepend(messageDiv);
+}
+
+
+
+
+function generateResponse(prompt){
+  // Here you can add your answer-generating code
+  addMessage("received", "Great to hear that!");
+}

@@ -13,11 +13,43 @@
   <!-- <link rel="stylesheet" href="{% static 'css/index.css' %}" />
   <link rel="stylesheet" href="{% static 'css/cards-index.css' %}" /> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <link rel="stylesheet" href="{% static 'main.css' %}">
 </head>
 
 <body>
+  <div id="chatbot-container" style="display: none;">
+  <div id="chatbot-interface">
+    <div id="chatbot-header">
+      <p>Want to know something? - Let's chat</p>
+    </div>
+    <div id="chatbot-chat">
+      <div class="chatbot-messages chatbot-received-messages">
+        <p>With what can I help you today?</p>
+      </div>
+      <div class="chatbot-messages chatbot-received-messages">
+        <p>Hello! I am Vatsal, service squash's chatbot</p>
+      </div>
+    </div>
+    <div id="chatbot-footer">
+      <div id="chatbot-input-container">
+        <input type="text" id="chatbot-input" name="chatbot-input" placeholder="Type a command here...">
+      </div>
+      <div id="chatbot-new-message-send-button">
+        <i class="material-icons" id="send-icon">send</i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div id="chatbot-open-container">
+  <i class="material-icons" id="open-chat-button">chat</i>
+  <i class="material-icons" id="close-chat-button" style="display: none">close</i>
+</div>
   <nav class="navbar">
     <div class="container">
 
@@ -52,6 +84,28 @@
   </nav>
 
 
+ <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div class="bubbles">
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+
+
+
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -61,11 +115,11 @@
     <div id="wrapper">
       <div id="slider-wrap">
         <ul id="slider">
-          <li><img src="https://i.postimg.cc/QNYkPnvr/p1.jpg" alt=""></li>
-          <li><img src="https://i.postimg.cc/W1B5yfF4/p2.jpg" alt=""></li>
-          <li><img src="https://i.postimg.cc/vBKRct2x/p3.jpg" alt=""></li>
-          <li><img src="https://i.postimg.cc/h40PPkcH/p4.jpg" alt=""></li>
-          <li><img src="https://i.postimg.cc/856J0tvT/p5.jpg" alt=""></li>
+          <li><img src="https://media.istockphoto.com/id/104731717/photo/luxury-resort.jpg?s=612x612&w=0&k=20&c=cODMSPbYyrn1FHake1xYz9M8r15iOfGz9Aosy9Db7mI=" alt=""></li>
+          <li><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80" alt=""></li>
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXR7tdza4G59V3ZySU1y5gmGzyWlryKE3dQEZCNt35&s" alt=""></li>
+          <li><img src="https://www.gannett-cdn.com/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg" alt=""></li>
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQALi54zLcfCYutnH9cqSph5Ao3BZyIE9zcqHf4ogla&s" alt=""></li>
         </ul>
 
         <!--controls-->

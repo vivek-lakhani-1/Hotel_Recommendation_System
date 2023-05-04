@@ -25,7 +25,7 @@
         </a>
       </div>
 
-      <div class="navbar-menu" id="open-navbar1">
+      <div class="navbar-menu" id="open-navbar1" style="margin-top: -4vh;">
         <ul class="navbar-nav">
           <li ><a href="/">Home</a></li>
           <li class="navbar-dropdown">
@@ -36,7 +36,9 @@
           </li>
           <li><a href="/about">About</a></li>
           <li class="active"><a  href="/contact">Contact</a></li>
+          {% if user == 1 %}
           <li><a href="/signin">Signin</a></li>
+          {% endif %}
         </ul>
       </div>
     </div>

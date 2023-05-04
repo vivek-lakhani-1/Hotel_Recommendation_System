@@ -38,7 +38,9 @@
 
           <li><a href="/about">About</a></li>
           <li><a href="/contact">Contact</a></li>
+          {% if user == 1 %}
           <li><a href="/signin">Signin</a></li>
+          {% endif %}
         </ul>
       </div>
     </div>
@@ -279,7 +281,7 @@
       </div>
 
       
-        <input type="submit" value="Show Hotel" style="margin-left: 20%;
+        <input type="submit" value="Show Hotel" style="margin-left: 10%;
     width: 20vw;
     height: 5vh;
     border-radius: 10px;">

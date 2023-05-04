@@ -39,6 +39,7 @@ a {
     background-color: #020323;
     padding: 1rem 1.15rem;
     border-bottom: 1px solid #eceef3;
+    margin-top: -7vh;
 }
 @media (min-width: 576px) {
     .navbar .container {
@@ -102,6 +103,8 @@ a {
     align-items: center;
     flex-basis: auto;
     flex-grow: 1;
+
+
 }
 @media (max-width: 768px) {
     .navbar .navbar-menu {
@@ -119,6 +122,7 @@ a {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+   
 }
 @media (max-width: 768px) {
     .navbar .navbar-menu .navbar-nav {
@@ -545,3 +549,4 @@ li {
   }
   
 }
+

@@ -64,8 +64,11 @@ def recm(request):
         frm = zip(data['city'], data['room_facilities'], data['hotel_star_rating'], data['pageurl'], data['distance'], data['address'], data['first_image_url'], data['property_name'])
 
         dd = {
-            'frm':frm
+            'frm':frm,
+            'user':1
         }
+        if 'username' in request.session:
+                dd['user'] = 0
         return render(request,'recommend.html',dd)
         
 
@@ -73,13 +76,20 @@ def recm(request):
     
     else:  
         g = geocoder.ip('me')
+        print(g)
         result = dict(algo(df,g.latlng[0],g.latlng[1]))
         data = {}
         for key,value in result.items():
             data[key] = list(value)
         frm = zip(data['city'], data['room_facilities'], data['hotel_star_rating'], data['pageurl'], data['distance'], data['address'], data['first_image_url'], data['property_name'])
 
+
+    
         dd = {
-            'frm':frm
+            'frm':frm,
+            'user':1
         }
+        if 'username' in request.session:
+                dd['user'] = 0
+        
         return render(request,'recommend.html',dd)

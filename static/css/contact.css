@@ -30,7 +30,7 @@ a {
 .navbar {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     background-color: #020323;
- 
+    height: 3vh;
     padding: 1rem 1.15rem;
     border-bottom: 1px solid #eceef3;
 }
@@ -57,6 +57,7 @@ a {
 .navbar .navbar-header {
     display: flex;
     align-items: center;
+    margin-top: -4vh;
 }
 @media (max-width: 768px) {
     .navbar .navbar-header {
@@ -72,6 +73,7 @@ a {
     border: none;
     display: none;
     outline: none;
+
 }
 @media (max-width: 768px) {
     .navbar .navbar-header .navbar-toggler {

@@ -949,7 +949,7 @@ text-transform: uppercase;
 
 
 body {
-  background: rgb(17,102,126);
+
   background: -moz-radial-gradient(circle, rgba(17,102,126,1) 0%, rgba(0,8,81,1) 100%);
   font-family: sans-serif;
 }

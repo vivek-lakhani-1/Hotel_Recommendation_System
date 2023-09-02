@@ -21,7 +21,7 @@ from recom import views as viewsm
 from about import views as viewsa
 from sign_page import views as viewsgn
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-urlpatterns += staticfiles_urlpatterns() # new
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.homepage),
@@ -32,3 +32,4 @@ urlpatterns = [
     path('signup',viewsgn.sign_up)
     
 ]
+urlpatterns += staticfiles_urlpatterns() # new
